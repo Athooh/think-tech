@@ -1,0 +1,84 @@
+{% extends "base.html "%}{% load static %}{% block content %}
+
+<section class="showcase">
+    <div class="showcase-content">
+        <div class="showcase-title">
+            <h1>we turn your <span>dreams</span> into a <span class="reality">reality</span>.</h1>
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi maxime exercitationem inventore tenetur impedit? Iure.</h3>
+            <button class="btn">hire a tech</button>
+        </div>
+        <!-- <div class="showcase-img"> -->
+        <img src="{% static 'images/showcase.png' %}" alt="">
+        <!-- </div> -->
+    </div>
+</section>
+<section class="brands">
+    <h1>trusted partners</h1>
+    <div class="partner-logos">
+        <img src="{% static 'images/flutter.svg' %}" alt="">
+        <img src="{% static 'images/iroko.svg' %}" alt="">
+        <img src="{% static 'images/tek-air.svg '%}" alt="">
+        <img src="{% static 'images/javascript-1.svg' %}" alt="">
+        <img src="{% static 'images/food-network-1.svg' %}" alt="">
+        <img src="{% static 'images/experts-exchange-3.svg' %}" alt="">
+        <img src="{% static 'images/air-france-11.svg' %}" alt="">
+        <img src="{% static 'images/premier-league-1.svg' %}" alt="">
+    </div>
+</section>
+<section class="service">
+    <div class="service-links">
+        <div class="work">
+            <h2><i class="fa-sharp fa-solid fa-magnifying-glass"></i> find work</h2>
+            <ul>
+                <li>
+                    <a href="">download think tech app</a>
+                </li>
+                <li>
+                    <a href="">join as a partner</a>
+                </li>
+                <li>
+                    <a href="">how it works</a>
+                </li>
+                <li>
+                    <a href="">login</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hire">
+            <h2>hire</h2>
+            <ul>
+                <li>
+                    <a href="">how it works</a>
+                </li>
+                <li>
+                    <a href="">find freelancers</a>
+                </li>
+                <li>
+                    <a href="">hire a company</a>
+                </li>
+                <li>
+                    <a href="">sign up</a>
+                </li>
+            </ul>
+        </div>
+        <div class="think-tech">
+            <h2>think tech</h2>
+            <ul>
+                <li>
+                    <a href="">about us</a>
+                </li>
+                <li>
+                    <a href="">contact us</a>
+                </li>
+                <li>
+                    <a href="">news</a>
+                </li>
+                <li>
+                    <a href="">careers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

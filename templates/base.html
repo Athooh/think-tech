@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Think Tech</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navlinks">
+
+            <div class="logo"><img src="{% static 'images/logo2.png' %}" alt="logo"></div>
+            <ul>
+                <li>
+                    <a href="#">startup</a>
+                    <li>
+                        <a href="#">science</a>
+                    </li>
+                    <li>
+                        <a href="#">ai</a>
+                    </li>
+                    <li>
+                        <a href="#">ventures</a>
+                    </li>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    {% block content %} {% endblock %}
+    <footer>
+        <div class="footer-container">
+            <img src="{% static 'images/logo2.png' %}" alt="logo">
+
+
+            <ul class="other-links">
+                <li><a href="">terms</a></li>
+                <li><a href="">privacy</a></li>
+                <li><a href="">cookies</a></li>
+                <li><a href="">faq</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+
+        </div>
+        <div class="copy">
+            <p>&copy; 2023 Think Tech. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/4f6078557e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

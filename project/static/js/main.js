@@ -22,7 +22,7 @@ function slidePrev() {
     carouselContainer.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
 }
 
-let slideInterval = setInterval(slideNext, 10000);
+let slideInterval = setInterval(slideNext, 5000);
 
 prevBtn.addEventListener('click', () => {
     clearInterval(slideInterval);
@@ -35,5 +35,5 @@ nextBtn.addEventListener('click', () => {
 });
 
 carousel.addEventListener('mouseleave', () => {
-    slideInterval = setInterval(slideNext, 10000);
+    slideInterval = setInterval(slideNext, 5000);
 });

@@ -156,46 +156,18 @@ img {
 }
 
 
-/* 
-/* BRANDS 
+/* CARROUSEL */
 
 .brands {
     background-color: #fff;
-    padding: 20px 0;
+    padding: 0 0 20px;
     box-shadow: 2px 0 #888888;
 }
 
-.brands h1 {
-    text-align: center;
-}
-
-.partner-logos {
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    background-color: #ffffffdd;
-}
-
-.partner-logos img {
-    width: 60px;
-    height: 60px;
-    filter: grayscale(100%);
-    transition: all 0.3s ease-out;
-}
-
-.partner-logos img:hover {
-    filter: grayscale(0);
-}
- */
-
-
-/* CARROUSEL */
-
 .carousel {
-    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
     overflow: hidden;
-    background-color: #fff;
 }
 
 .carousel h1 {
@@ -203,11 +175,7 @@ img {
 }
 
 .carousel-container {
-    width: 1200px;
-    margin: 0 auto;
     display: flex;
-    /* overflow: hidden; */
-    /* flex-wrap: wrap; */
     transition: transform 0.5s ease;
 }
 
@@ -219,8 +187,8 @@ img {
 }
 
 .carousel-slide img {
-    width: 60PX;
-    height: 60PX;
+    width: 80PX;
+    height: 80PX;
     filter: grayscale(100%);
 }
 

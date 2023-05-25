@@ -1,0 +1,145 @@
+{% extends "base.html"%}{% load static %}{% block content %}
+
+<section class="hire-container">
+    <div class="hire-box">
+        <h1>easily hire talent</h1>
+        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quos reprehenderit porro autem laborum eligendi optio odit, repudiandae consectetur eos eaque dolores numquam! Omnis a quae, autem magni odit vel ex esse in, voluptates perferendis
+            praesentium. </h3>
+        <h2>discover talent here</h2>
+        <form class="search-form">
+            <input type="text" class="search-input" placeholder="Try Java, Software Dev..">
+            <button type="submit" class="search-button">
+        <i class="fas fa-search"></i>
+        </button>
+        </form>
+    </div>
+    <div class="youtube-intro">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0URuIXEpCJQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+<section class="search-hire">
+    <div class="search-intro">
+        <div class="search-intro-img">
+            <img src="{% static 'images/search_img1.png' %}" alt="image">
+        </div>
+        <div class="intro">
+            <h1>search and hire full-time staff or freelancers</h1>
+            <p>Easily hire talent for your short-term or long-term projects.</p>
+            <ul>
+                <li>Search and instantly get matched with candidates that meet your specifications and budget.</li>
+                <li>Schedule an interview with the talent and hire them. Sign a contract that details the project scope and get started.</li>
+                <li>Our talents are remote-ready, fluent in collaborative tools, and available for your entire project. Our multilingual and multinational professional staff will also be available at any time to support you.</li>
+            </ul>
+            <button><a href="">Find Freelancer</a></button>
+        </div>
+    </div>
+</section>
+<section class="find-talent">
+    <div class="find-intro">
+        <div class="find">
+            <h1>Find and hire Employees from our vetted talents</h1>
+            <p>All Think Tech talents must meet rigorous standards for expertise, validated by testing and screening interviews. Our system automatically matches talents who meet your request specifications and budget. An Account Representative will be available
+                to guide you through the process; and you can check the status of your request in your account at any time.</p>
+            <h2>Search for top talent</h2>
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Try Java, Software Dev..">
+                <button type="submit" class="search-button">
+            <i class="fas fa-search"></i>
+            </button>
+            </form>
+        </div>
+        <div class="youtube-intro">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CCxHiGVMU0g" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+</section>
+<section class="process">
+    <div class="hire-process">
+        <h2>The Hiring Process</h2>
+        <div class="process-box">
+
+            <div class="box">
+                <h3><i class="fa-solid fa-magnifying-glass"> </i> Search</h3>
+                <p>Find the talent you need, in one quick search. Enter a query, then use easy checkboxes to filter for language, location, skill, and budget. Browse through results, then click the profiles that appeal to you to learn more.</p>
+            </div>
+
+
+            <div class="box">
+                <h3><i class="fa-solid fa-cart-shopping"></i> Select Candidates</h3>
+                <p>After reviewing the talent profiles in detail, choose those that appeal to you most. Enter the details of your request, and our system will communicate your request directly to the talent automatically.</p>
+            </div>
+
+
+            <div class="box">
+                <h3><i class="fa-solid fa-users"></i> Interview</h3>
+                <p>Choose the talents you would like to interview and meet virtually. Have full confidence in selecting talents who will deliver high-quality work and possess the right mindset, attitude, and integrity.</p>
+            </div>
+
+
+            <div class="box">
+                <h3><i class="fa-solid fa-file-contract"></i> Agreement</h3>
+                <p>Our team will handle the entire contracting process, right through the platform. Encounter issues? Our dedicated customer support team will resolve them promptly. Our customers trust and return to us, year after year.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="service">
+    <div class="service-links">
+        <div class="work">
+            <h2><i class="fa-sharp fa-solid fa-magnifying-glass"></i> find work</h2>
+            <ul>
+                <li>
+                    <a href="">download think tech app</a>
+                </li>
+                <li>
+                    <a href="">join as a partner</a>
+                </li>
+                <li>
+                    <a href="">how it works</a>
+                </li>
+                <li>
+                    <a href="">login</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hire">
+            <h2><i class="fa-solid fa-handshake"></i> hire</h2>
+            <ul>
+                <li>
+                    <a href="">how it works</a>
+                </li>
+                <li>
+                    <a href="">find freelancers</a>
+                </li>
+                <li>
+                    <a href="">hire a company</a>
+                </li>
+                <li>
+                    <a href="">sign up</a>
+                </li>
+            </ul>
+        </div>
+        <div class="think-tech">
+            <h2><i class="fa-solid fa-building"></i> think tech</h2>
+            <ul>
+                <li>
+                    <a href="">about us</a>
+                </li>
+                <li>
+                    <a href="">contact us</a>
+                </li>
+                <li>
+                    <a href="">news</a>
+                </li>
+                <li>
+                    <a href="">careers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

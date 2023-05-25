@@ -247,6 +247,316 @@ img {
 }
 
 
+/* STARTUP */
+
+.hire-container {
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 20px;
+}
+
+.hire-box h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-input {
+    padding: 10px;
+    width: 100%;
+}
+
+.search-button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 3px;
+    width: 80px;
+    background-color: rgb(0, 136, 255);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.search-button:hover {
+    background-color: transparent;
+    border: 1px solid #444;
+    color: gray;
+}
+
+
+/* SEARCH-HIRE */
+
+.search-hire {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.search-intro {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.search-intro p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.intro h1 {
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.intro li {
+    list-style-type: square;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 50px;
+}
+
+.intro button {
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(0, 136, 255);
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.intro button a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.intro button:hover {
+    background-color: transparent;
+    border: 1px solid #444;
+    color: gray;
+}
+
+.intro button a:hover {
+    background-color: transparent;
+    color: gray;
+}
+
+.find-intro {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.find-intro h1 {
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.find p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.find h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.youtube-intro {
+    margin-top: 30px;
+}
+
+.process {
+    background-color: #fff;
+}
+
+.hire-process {
+    width: 1200px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 10px 0 30px;
+    border-radius: 3px;
+}
+
+.process-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.hire-process h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.process-box .box h3 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(0, 136, 255);
+}
+
+.process-box .box p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.process-box .box h3 i {
+    background-color: rgb(0, 136, 255);
+    padding: 15px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+
+/* CONTACT */
+
+.address {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.address .contact-intro {
+    text-align: center;
+}
+
+.address .contact-intro h3 {
+    font-size: 26px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.address .contact-intro p {
+    width: 600px;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.address-box {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.address-box .add-box {
+    background-color: #ededed;
+    box-shadow: 1px 1px 2px #888888;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.address-box .add-box h3 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.address-box .add-box p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.address .add-box .box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.address .add-box .box i {
+    color: rgb(0, 136, 255);
+    font-size: 26px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+.form-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+/* form {
+    max-width: 700px;
+    margin: 0 auto;
+} */
+
+.form h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: rgb(0, 136, 255);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+input[type="submit"]:hover {
+    background-color: transparent;
+    color: gray;
+    border: 1px solid #444;
+}
+
+
 /* FOOTER */
 
 footer {

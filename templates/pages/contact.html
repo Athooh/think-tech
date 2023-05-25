@@ -1,0 +1,109 @@
+{% extends "base.html" %}{% load static %}{% block content %}
+
+<section class="address">
+    <div class="contact-intro">
+        <h3>Contact us</h3>
+        <p>Contact Think Tech Inc. Customer Support for questions about hiring freelance talent, Network Partners, partnerships, and more.</p>
+    </div>
+    <div class="address-box">
+        <div class="add-box">
+            <h3>Nairobi</h3>
+            <div class="box">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <p>Gebeya Limited <br>Sifa Towers 7E, Lenana Road <br>Nairobi, Kenya, 66049 – 00800</p>
+            </div>
+        </div>
+        <div class="add-box">
+            <h3>Ethiopia</h3>
+            <div class="box">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <p>Minaye Office Park; Sub-city: Kirkos, <br>Woreda 9, House No. <br>501/004/498,<br>14th Floor Addis Ababa, Ethiopia</p>
+            </div>
+        </div>
+        <div class="add-box">
+            <h3>Delaware</h3>
+            <div class="box">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <p>850 New Burton Road, Suite 201, <br>Dover, Delaware, 19904</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-form">
+    <div class="form-container">
+        <img src="{% static 'images/contact_form_girl.png' %}" alt="girl image">
+        <div class="form">
+            <h2>send us an email</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" placeholder="e.g. John Doe, Mary Smith" name="name" required><br><br>
+
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" placeholder="e.g. abcd@gmail.com" name="email" required><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="5" cols="30" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="service">
+    <div class="service-links">
+        <div class="work">
+            <h2><i class="fa-sharp fa-solid fa-magnifying-glass"></i> find work</h2>
+            <ul>
+                <li>
+                    <a href="">download think tech app</a>
+                </li>
+                <li>
+                    <a href="">join as a partner</a>
+                </li>
+                <li>
+                    <a href="">how it works</a>
+                </li>
+                <li>
+                    <a href="">login</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hire">
+            <h2><i class="fa-solid fa-handshake"></i> hire</h2>
+            <ul>
+                <li>
+                    <a href="">how it works</a>
+                </li>
+                <li>
+                    <a href="">find freelancers</a>
+                </li>
+                <li>
+                    <a href="">hire a company</a>
+                </li>
+                <li>
+                    <a href="">sign up</a>
+                </li>
+            </ul>
+        </div>
+        <div class="think-tech">
+            <h2><i class="fa-solid fa-building"></i> think tech</h2>
+            <ul>
+                <li>
+                    <a href="">about us</a>
+                </li>
+                <li>
+                    <a href="">contact us</a>
+                </li>
+                <li>
+                    <a href="">news</a>
+                </li>
+                <li>
+                    <a href="">careers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

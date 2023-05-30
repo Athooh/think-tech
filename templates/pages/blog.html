@@ -1,0 +1,208 @@
+{% extends "base.html" %}{% load static %}{% block content %}
+
+<section class="blog-container">
+    <div class="blog-title">
+        <h1>blogs</h1>
+        <h3>The latest insights on tech, talent, freelancing, and Africa.</h3>
+        <ul>
+            <li><a href="{% url 'blog' %}"><i class="fa-solid fa-blog"></i> blog</a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-scroll"></i> announcements</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake"></i> events</a></li>
+        </ul>
+    </div>
+
+    <div class="featured-blogs">
+        <h2>featured blogs</h2>
+        <div class="blog">
+            <div class="blog-boxes">
+                <div class="b-box">
+                    <img src="{% static 'images/journey.jpg' %}" alt="image">
+                    <div class="caption-title">
+                        <h3>My Journey to Becoming one of Africa’s Business Heroes</h3>
+                        <p>May 4, 2023</p>
+                    </div>
+                </div>
+
+
+                <div class="b-box">
+                    <img src="{% static 'images/ruby.jpg' %}" alt="image">
+                    <div class="caption-title">
+                        <h3>Hire Ruby Programmers in Africa on Gebeya</h3>
+                        <p>April 27, 2023</p>
+                    </div>
+                </div>
+
+                <div class="b-box">
+                    <img src="{% static 'images/react.jpg' %}" alt="image">
+                    <div class="caption-title">
+                        <h3>
+                            Hire React Native Developers in Africa</h3>
+                        <p>April 24, 2023</p>
+                    </div>
+                </div>
+
+
+                <div class="b-box">
+                    <img src="{% static 'images/youtube.jpg' %}" alt="image">
+                    <div class="caption-title">
+                        <h3>Hire Freelance YouTube Experts on Gebeya</h3>
+                        <p>April 21, 2023</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="side-bar">
+                <h2>categories</h2>
+                <ul>
+                    <li><a href="">africa</a></li>
+                    <li><a href="">announcements</a></li>
+                    <li><a href="">blogs</a></li>
+                    <li><a href="">covid-19</a></li>
+                    <li><a href="">events</a></li>
+                    <li><a href="">jobs</a></li>
+                    <li><a href="">latest news</a></li>
+                    <li><a href="">must-read</a></li>
+                    <li><a href="">software developers</a></li>
+                    <li><a href="">talent</a></li>
+                    <li><a href="">talent wars</a></li>
+                    <li><a href="">training</a></li>
+                </ul>
+            </div>
+        </div>
+        <button class="btn">load More</button>
+    </div>
+
+
+</section>
+<section class="must-read-container">
+    <div class="must-read-blogs">
+        <h2>must-read blogs</h2>
+        <div class="must-read-blog">
+            <div class="blog-boxes">
+                <div class="b-box">
+                    <img src="{% static 'images/hire_now.jpg' %}" alt="image">
+                    <div class="caption-title">
+                        <h3>Hiring Now: Front-End Developer</h3>
+                        <p>June 21, 2023</p>
+                    </div>
+                </div>
+                <div class="b-box">
+                    <img src="{% static 'images/winner1.jpg' %}" alt="image">
+                    <div class="caption-title">
+                        <h3>Talent Wars in Africa's How to Win It</h3>
+                        <p>November 4, 2021</p>
+                    </div>
+                </div>
+                <div class="b-box">
+                    <img src="{% static 'images/challenges.jpg' %}" alt="image">
+                    <div class="caption-title">
+                        <h3>Nigerian Startups: 4 Talent Retention Challenges & Solutions</h3>
+                        <p>April 8, 2022</p>
+                    </div>
+                </div>
+                <div class="b-box">
+                    <img src="{% static 'images/female_developers.jpg' %}" alt="image">
+                    <div class="caption-title">
+                        <h3>The Rise of Female Developers in Africa</h3>
+                        <p>March 9, 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="archive">
+                <label for="search">archive</label>
+                <select id="search">
+            <option value="">-- Select --</option>
+            <script>
+                // Get current date
+                var currentDate = new Date();
+    
+                // Set default month and year
+                var defaultMonth = currentDate.getMonth() + 1; // Months are zero-based
+                var defaultYear = currentDate.getFullYear();
+    
+                // Set options for the dropdown
+                var dropdown = document.getElementById("search");
+                var startYear = defaultYear - 3; // Three years back
+                var endYear = defaultYear;
+
+                // Add options to the dropdown
+                for (var year = startYear; year <= endYear; year++) {
+                for (var month = 1; month <= 12; month++) {
+                    var option = document.createElement("option");
+                    option.value = month + "-" + year;
+                    option.text = month + "/" + year;
+                    
+                    // Set the default month and year as selected
+                    if (year === defaultYear && month === defaultMonth) {
+                    option.selected = true;
+                    }
+                    
+                    dropdown.appendChild(option);
+                }
+                }
+            </script>
+            </select>
+            </div>
+        </div>
+        <button class="btn">Load More</button>
+    </div>
+</section>
+
+<section class="service">
+    <div class="service-links">
+        <div class="work">
+            <h2><i class="fa-sharp fa-solid fa-magnifying-glass"></i> find work</h2>
+            <ul>
+                <li>
+                    <a href="">download think tech app</a>
+                </li>
+                <li>
+                    <a href="">join as a partner</a>
+                </li>
+                <li>
+                    <a href="">how it works</a>
+                </li>
+                <li>
+                    <a href="">login</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hire">
+            <h2><i class="fa-solid fa-handshake"></i> hire</h2>
+            <ul>
+                <li>
+                    <a href="">how it works</a>
+                </li>
+                <li>
+                    <a href="">find freelancers</a>
+                </li>
+                <li>
+                    <a href="">hire a company</a>
+                </li>
+                <li>
+                    <a href="">sign up</a>
+                </li>
+            </ul>
+        </div>
+        <div class="think-tech">
+            <h2><i class="fa-solid fa-building"></i> think tech</h2>
+            <ul>
+                <li>
+                    <a href="">about us</a>
+                </li>
+                <li>
+                    <a href="">contact us</a>
+                </li>
+                <li>
+                    <a href="">news</a>
+                </li>
+                <li>
+                    <a href="">careers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

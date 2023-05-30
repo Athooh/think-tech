@@ -9,3 +9,6 @@ def startup(request):
 
 def contact(request):
     return render(request, 'pages/contact.html')
+
+def blog(request):
+    return render(request, 'pages/blog.html')

@@ -13,7 +13,7 @@ nav {
     background-color: #fff;
     width: 100%;
     height: 100px;
-    box-shadow: 0 0 2px #888888;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .navlinks {
@@ -198,24 +198,24 @@ img {
 
 
 /* .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    cursor: pointer;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 30px;
+background-color: rgba(0, 0, 0, 0.5);
+color: #fff;
+border: none;
+cursor: pointer;
 } */
 
 
 /* .carousel-prev {
-    left: 10px;
+left: 10px;
 }
 
 .carousel-next {
-    right: 10px;
+right: 10px;
 } */
 
 
@@ -511,8 +511,8 @@ img {
 
 
 /* form {
-    max-width: 700px;
-    margin: 0 auto;
+max-width: 700px;
+margin: 0 auto;
 } */
 
 .form h2 {
@@ -555,6 +555,211 @@ input[type="submit"]:hover {
     color: gray;
     border: 1px solid #444;
 }
+
+
+/* BLOG */
+
+section .blog-container {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+.blog-title {
+    /* background-color: #fff; */
+    text-align: center;
+    padding: 30px 0;
+}
+
+.blog-title ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.blog-title ul a {
+    color: black;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.blog-title ul li:hover {
+    border-bottom: 3px solid rgb(0, 136, 255)
+}
+
+.blog-title a:hover {
+    color: rgb(0, 136, 255);
+}
+
+.blog-title a i {
+    font-size: 18px;
+}
+
+.featured-blogs {
+    background-color: #fff;
+    width: 1200px;
+    margin: 20px auto;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.featured-blogs h2 {
+    padding-bottom: 10px;
+}
+
+.featured-blogs .blog {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.featured-blogs .blog .blog-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+}
+
+.blog-boxes .b-box {
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ededed;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.b-box:hover {
+    box-shadow: 1px 1px 2px #888888;
+    transition: transform 0.5s ease;
+}
+
+.b-box img {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.b-box .caption-title h3 {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 10px 0 0;
+}
+
+.b-box .caption-title p {
+    padding-top: 20px;
+}
+
+.side-bar {
+    width: 500px;
+}
+
+.side-bar ul {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.side-bar li {
+    list-style-type: circle;
+    padding-left: 10px;
+}
+
+.side-bar a {
+    font-size: 14px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.side-bar a:hover {
+    color: rgb(0, 136, 255);
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgb(0, 136, 255);
+    border: none;
+    outline: none;
+    font-weight: 300;
+    text-transform: capitalize;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: gray;
+    border: 1px solid #444;
+}
+
+
+/* MUST-READ CONTAINER */
+
+.must-read-container {
+    width: 1200px;
+    margin: 30px auto;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+
+.must-read-blogs {
+    padding: 30px;
+}
+
+.must-read-blog {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.must-read-blog .blog-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+}
+
+.must-read-blog .blog-boxes .b-box {
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.archive {
+    width: 500px;
+}
+
+.archive label {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.archive #search {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+}
+
+.must-read-blogs h2 {
+    padding-bottom: 10px;
+}
+
+
+/* .must-read-blogs button {
+    margin-left: 30px;
+} */
 
 
 /* FOOTER */

@@ -12,7 +12,6 @@
 
 <section class="browse_jobs">
 
-
     <div class="jobs">
         <div class="jobs_categories">
             <h2>careers</h2>
@@ -115,10 +114,10 @@
                     <a href="">join as a partner</a>
                 </li>
                 <li>
-                    <a href="">how it works</a>
+                    <a href="{% url 'how_it_works' %}">how it works</a>
                 </li>
                 <li>
-                    <a href="">login</a>
+                    <a href="{% url 'login' %}">login</a>
                 </li>
             </ul>
         </div>
@@ -126,7 +125,7 @@
             <h2><i class="fa-solid fa-handshake"></i> hire</h2>
             <ul>
                 <li>
-                    <a href="">how it works</a>
+                    <a href="{% url 'how_it_works' %}">how it works</a>
                 </li>
                 <li>
                     <a href="">find freelancers</a>
@@ -158,5 +157,7 @@
         </div>
     </div>
 </section>
+
+
 
 {% endblock %}

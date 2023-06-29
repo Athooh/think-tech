@@ -1,4 +1,4 @@
-{% extends "base.html"%}{% load static %}{% block content %}
+{% extends "base.html"%} {% load static %} {% block content %}
 
 <section class="talent-container">
     <div class="talent_slide_intro">
@@ -12,14 +12,18 @@
             </div>
         </div>
         <div class="talent_join">
-            <h2>i am looking for...</h2>
-            <div class="talent-box">
+            <h2>log in to...</h2>
+            <div class="talent-box-login">
                 <div class="box">
-                    <i class="fa-solid fa-computer"></i>
-                    <h3>tech related jobs</h3>
+                    <img src="{% static 'images/talent-search.png' %}" alt="">
+                    <h3><a href="{% url 'client_login' %}">hire top talent</a></h3>
+                </div>
+                <div class="box">
+                    <img src="{% static 'images/data-science.png' %}" alt="">
+                    <h3><a href="{% url 'login-as-tech-talent' %}">Get hired for top projects</a></h3>
                 </div>
             </div>
-            <p>Already have an account? <span><a href="{% url 'login' %}">Log in</a></span></p>
+            <p>Dont have an account? <span>Sign up</span></p>
         </div>
     </div>
     <div class="talent_slide_more">
@@ -42,5 +46,4 @@
     </div>
 
 </section>
-
 {% endblock %}

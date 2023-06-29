@@ -21,3 +21,15 @@ def about(request):
 
 def careers(request):
     return render(request, 'pages/careers.html')
+
+def how_it_works(request):
+    return render(request, 'pages/how_it_works.html')
+
+def login(request):
+    return render(request, 'pages/login.html')
+
+def client_login(request):
+    return render(request, 'pages/client_login.html')
+
+def login_tech_talent(request):
+    return render(request, 'pages/login-as-tech-talent.html')

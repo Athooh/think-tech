@@ -37,21 +37,3 @@ nextBtn.addEventListener('click', () => {
 carousel.addEventListener('mouseleave', () => {
     slideInterval = setInterval(slideNext, 5000);
 });
-
-// Join as Talent slide
-
-const t_slides = document.querySelectorAll('.t_slides');
-let currentSlide = 0;
-
-function showSlide(index) {
-    t_slides[currentSlide].style.display = 'none';
-    t_slides[index].style.display = 'block';
-    currentSlide = index;
-}
-
-function nextSlide() {
-    const newIndex = (currentSlide + 1) % t_slides.length;
-    showSlide(newIndex);
-}
-
-setInterval(nextSlide, 3000);

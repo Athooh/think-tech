@@ -36,6 +36,7 @@ a {
 h1 {
     font-size: 50px;
     text-transform: capitalize;
+    line-height: 1.2;
 }
 
 h2 {
@@ -45,7 +46,13 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 14px;
     font-weight: 300;
 }
 
@@ -128,6 +135,10 @@ section .showcase-title {
     color: inherit;
     text-decoration: underline;
     font-style: italic;
+}
+
+.showcase-title h3 {
+    font-weight: 300;
 }
 
 .showcase-title .btn {
@@ -251,7 +262,7 @@ right: 10px;
 /* STARTUP */
 
 .hire-container {
-    width: 1200px;
+    width: 78%;
     margin: 50px auto;
     display: flex;
     justify-content: space-between;
@@ -264,6 +275,11 @@ right: 10px;
     padding-bottom: 10px;
     font-size: 26px;
     font-weight: 700;
+}
+
+.hire-box p {
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .search-form {
@@ -571,6 +587,11 @@ section .blog-container {
     padding: 30px 0;
 }
 
+.blog-title h3 {
+    font-weight: 300;
+    font-size: 22px;
+}
+
 .blog-title ul {
     display: flex;
     justify-content: center;
@@ -775,49 +796,19 @@ section .blog-container {
 /* JOIN AS TALENT SECTION */
 
 .talent-container {
-    width: 77%;
+    width: 78%;
     margin: 30px auto;
+}
+
+.talent_slide_intro {
     display: flex;
     justify-content: space-between;
     align-content: center;
 }
 
 .talent_slide {
-    max-width: 600px;
-    padding-top: 30px;
+    padding: 30px 0;
 }
-
-.talent_slide .slideshow {
-    padding-top: 20px;
-}
-
-.talent_slide h1 {
-    max-width: 400px;
-    line-height: 1.1;
-}
-
-.talent_slide .carousel-container .carousel-slide {
-    /* width: 500px; */
-    flex: 0 0 25%;
-    max-width: 50%;
-    padding: 10px;
-}
-
-
-/* 
-.t_slides {
-    display: none;
-}
-
-.t_slides p {
-    font-size: 16px;
-    max-width: 500px;
-}
-
-.t_slides h2 {
-    font-size: 30px;
-    font-weight: 300;
-} */
 
 .talent_join {
     max-width: 600px;
@@ -876,6 +867,191 @@ section .blog-container {
     color: rgb(0, 136, 255);
     font-weight: 600;
     text-transform: capitalize;
+}
+
+.talent_slide_more {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.t_box_transparent {
+    padding-top: 30px;
+    width: 500px;
+}
+
+.t_box_orange,
+.t_box_green,
+.t_box_blue {
+    width: 30%;
+    height: 230px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.t_box_orange {
+    background-color: orange;
+}
+
+.t_box_green {
+    background-color: green;
+}
+
+.t_box_blue {
+    background-color: rgb(0, 136, 255);
+}
+
+
+/* LOGIN SECTION */
+
+.talent-box-login {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 20px;
+}
+
+.talent-box-login .box {
+    width: 300px;
+    height: 230px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.talent-box-login .box h3 a {
+    color: rgb(0, 136, 255);
+}
+
+.talent-box-login .box img {
+    width: 80px;
+    height: 80px;
+}
+
+
+/* CLIENT LOGIN */
+
+.client-container {
+    width: 78%;
+    margin: 30px auto;
+}
+
+.client-container h1 {
+    padding: 10px 0;
+    width: 600px;
+}
+
+.client_intro {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 30px;
+}
+
+.client_boxes {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 700px;
+}
+
+.client_boxes .t_box_transparent,
+.client_boxes .t_box_orange,
+.client_boxes .t_box_blue,
+.client_boxes .t_box_green {
+    width: 300px;
+    height: 300px;
+}
+
+.client_boxes .t_box_transparent {
+    background-color: purple;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.blue {
+    text-align: center;
+    text-transform: uppercase;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 0 10px 0;
+}
+
+.black {
+    background-color: black;
+    text-align: center;
+    text-transform: uppercase;
+    height: 50px;
+    padding: 10px 0;
+    border-radius: 25px;
+}
+
+.transparent {
+    background-color: transparent;
+    border: 1px solid gray;
+    text-align: center;
+    text-transform: uppercase;
+    height: 50px;
+    padding: 10px 0;
+    border-radius: 25px;
+    color: black;
+}
+
+.purple {
+    background-color: purple;
+    text-align: center;
+    text-transform: uppercase;
+    height: 50px;
+    padding: 10px 0;
+    border-radius: 25px;
+}
+
+.blue img,
+.black img,
+.transparent img {
+    width: 40px;
+    height: 30px;
+    margin-right: 30px;
+    padding-top: 10px;
+}
+
+.client_login {
+    border: 1px solid #c4c4c4;
+    padding: 20px;
+    width: 550px;
+}
+
+.client_login p {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.client_login p span {
+    color: rgb(0, 136, 255);
+    font-weight: 600;
+}
+
+.client_h2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.client_h2 h2 {
+    padding-top: 30px;
+}
+
+.client_h2 img {
+    width: 60px;
+    height: 60px;
 }
 
 
@@ -984,6 +1160,8 @@ section .blog-container {
 
 .value_box .box h3 {
     text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .value_box .box p {
@@ -1027,6 +1205,7 @@ section .blog-container {
 .vision_box .box h3 {
     padding-top: 30px;
     text-transform: capitalize;
+    font-weight: 400;
 }
 
 .vision_box .box img {
@@ -1175,7 +1354,7 @@ section .blog-container {
 
 .jobs {
     width: 78%;
-    margin: 30px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -1224,17 +1403,19 @@ section .blog-container {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    /* padding: 30px 0; */
+    padding: 30px 0;
     background-color: #e9e9e9;
 }
 
 .hired_box img {
     width: 400px;
+    filter: grayscale(100%);
 }
 
 .hire_data h3 {
     color: rgb(0, 136, 255);
     text-transform: capitalize;
+    font-weight: 300;
 }
 
 .hire_data h2 {
@@ -1287,6 +1468,135 @@ section .blog-container {
 .app_stores img {
     width: 150px;
     height: 50px;
+    filter: grayscale(0);
+}
+
+
+/* HOW IT STARTS SECTION */
+
+.start_head {
+    width: 78%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 20px;
+}
+
+.start_title p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.start_title h3 {
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 20px 0 10px 0;
+}
+
+.search_container {
+    background-color: #fff;
+}
+
+.search_box {
+    width: 78%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 20px;
+}
+
+.search_form {
+    padding-top: 50px;
+}
+
+.search_form p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.search_form ul li {
+    margin-left: 20px;
+    list-style-type: square;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.find_hire {
+    width: 78%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 20px;
+}
+
+.find_box h3 {
+    padding: 20px 0 10px 0;
+}
+
+.find_section .hire-process {
+    padding: 10px;
+}
+
+.unlock_box1 {
+    width: 78%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 20px;
+}
+
+.unlock_box1 .box1 {
+    padding-top: 30px;
+}
+
+.box1 h3 {
+    padding: 20px 0 10px 0;
+}
+
+.unlock_talent .hire-process {
+    padding: 10px;
+}
+
+.hire_talent {
+    width: 78%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 20px;
+}
+
+.talent_box .app_stores {
+    padding-top: 10px;
+}
+
+.app_process {
+    background-color: #e9e9e9;
+}
+
+.talent_processing {
+    width: 78%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.process_box {
+    width: 300px;
+    padding: 20px 0;
+}
+
+.process_title img {
+    width: 60px;
+    height: 60px;
+    filter: grayscale(100%);
 }
 
 
